@@ -1,5 +1,4 @@
-FROM mhart/alpine-node:8
+FROM mhart/alpine-node:10
 
 RUN apk add --no-cache curl rsync openssh git
-RUN yarn global add lerna
 RUN yarn config set workspaces-experimental true
