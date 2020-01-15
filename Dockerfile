@@ -6,3 +6,4 @@ RUN wget -O ./inst.tgz https://s3-eu-west-1.amazonaws.com/lokalise-assets/cli/lo
     tar -xvzf ./inst.tgz &&\
     rm -rf ./inst.tgz &&\
     mv ./lokalise /usr/local/bin/lokalise 
+RUN yarn config set cache-folder /usr/local/share/.cache/yarn
